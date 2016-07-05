@@ -1,0 +1,22 @@
+{
+  "name": "scroll-list",
+  "description": "A scrollable list knockout component",
+  "main": "index.html",
+  "authors": [
+    "Dan Overton"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/doverton51/scroll-list",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "knockout": "^3.4.0"
+  }
+}
