@@ -1,0 +1,68 @@
+.scrollWidget
+{
+  position: relative; /* to make this the reference for the below position absolute */
+
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
+  }
+
+  ul {
+    list-style-type: none;
+    overflow-x: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+
+  .scrollButtonContainer {
+    position: absolute;
+    top: 40%;
+    height: 10%;
+    right: 0;
+
+    .scrollButton {
+      display: inline-block;
+      height: 20px;
+      width: 40px;
+      background-color: darkblue;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .scrollButton:hover {
+      background-color: blue;
+    }
+  }
+
+  .scrollbar {
+    background-color: white;
+    width: 100%;
+    height: 5px;
+    position: relative;
+  }
+
+  .scrollbar-inner {
+    background-color: darkblue;
+    width: 0;
+    height: 5px;
+    position: absolute;
+    left: 1px;
+  }
+}

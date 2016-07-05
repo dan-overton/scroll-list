@@ -1,0 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+main {
+  margin: auto;
+  width: 75%;
+}
+
+.no-js .dynamic-content { display: none; }

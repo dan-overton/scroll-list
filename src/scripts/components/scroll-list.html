@@ -1,0 +1,18 @@
+<div class="scrollWidget">
+  <div class="scrollButtonContainer" data-bind="visible: showScrollControls">
+    <div class="scrollButton scrollLeft" data-bind="event: {mousedown: startScrolling.bind($data, -15), mouseup: stopScrolling, mouseleave: stopScrolling}">
+      <span><<</span>
+    </div>
+    <div class="scrollButton scrollRight" data-bind="event: {mousedown: startScrolling.bind($data, 15), mouseup: stopScrolling, mouseleave: stopScrolling}">
+      <span>>></span>
+    </div>
+  </div>
+  <ul class="dragscroll" data-bind="event: {dragscroll: dragScroll}, prop: {scrollLeft: scrollPosition}">
+  <li><!-- ko template: { nodes: $componentTemplateNodes} --> <!-- /ko -->
+  </li>
+  </ul>
+  <div class="scrollbar" data-bind="visible: showScrollControls">
+    <div class="scrollbar-inner" data-bind="style: {width: scrollBarInnerWidth, left: scrollBarInnerLeft}">
+    </div>
+  </div>
+</div>
